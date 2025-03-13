@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> List Produk </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product img {
+            width: 200px;
+            /* Ukuran gambar */
+            height: 200px;
+            object-fit: cover;
+            /* Potong gambar biar proporsional */
+            border-radius: 10px;
+            /* Opsional */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html"> Serene Spark </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produk.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5 text-center">
+        <h1 class="fw-bold mt-4 mb-3">Find your favorite only at Serene Spark!</h1>
+
+        <!-- FILTER BUTTONS -->
+        <div class="btn-group mb-4 mt-2">
+            <button class="btn btn-primary" onclick="filterSelection('all')">All</button>
+            <button class="btn btn-outline-primary" onclick="filterSelection('gelang')">Bracelets</button>
+            <button class="btn btn-outline-primary" onclick="filterSelection('cincin')">Ring</button>
+            <button class="btn btn-outline-primary" onclick="filterSelection('phonestrap')">Phonestrap</button>
+        </div>
+
+
+        <!-- PRODUK LIST -->
+        <!-- Product Section -->
+        <section class="product-section container mt-5">
+            <h2 class="text-center fw-bold mb-4">Our Products</h2>
+            <div class="row justify-content-center">
+
+                <!-- Phonestrap -->
+                <!-- Phonestrap -->
+                <div class="col-md-4 mb-4 product phonestrap">
+                    <div class="card shadow-lg">
+                        <div class="d-flex justify-content-center mt-3">
+                            <img src="phonestrap/phonestrap1.jpg" class="card-img-top img-fluid rounded"
+                                style="width: 80%; height: 300px; object-fit: cover;" alt="Phonestrap">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dreamy Pastel Charm</h5>
+                            <p class="card-text">Stylish and trendy phone straps to add a unique touch to your device.
+                            </p>
+                            <a href="phonestrap1.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bracelet -->
+                <!-- Bracelet -->
+                <div class="col-md-4 mb-4 product gelang">
+                    <div class="card shadow-lg">
+                        <div class="d-flex justify-content-center mt-3">
+                            <img src="gelang/gelang3.jpg" class="card-img-top img-fluid rounded"
+                                style="width: 80%; height: 300px; object-fit: cover;" alt="Bracelet">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Celestial Charm Bracelet</h5>
+                            <p class="card-text">Elegant bracelets that complement your daily fashion.</p>
+                            <a href="gelang3.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ring -->
+                <!-- Ring -->
+                <div class="col-md-4 mb-4 product cincin">
+                    <div class="card shadow-lg">
+                        <div class="d-flex justify-content-center mt-3">
+                            <img src="cincin/cincin2.jpg" class="card-img-top img-fluid rounded"
+                                style="width: 80%; height: 300px; object-fit: cover;" alt="Ring">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pink Beaded Ring Set</h5>
+                            <p class="card-text">Shimmering rings designed for elegance and charm.</p>
+                            <a href="cincin2.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Products -->
+                <div class="col-md-4 mb-4 product phonestrap">
+                    <div class="card shadow-lg">
+                        <div class="d-flex justify-content-center mt-3">
+                            <img src="phonestrap/phonestrap2.jpg" class="card-img-top img-fluid rounded"
+                                style="width: 80%; height: 300px; object-fit: cover;" alt="Phonestrap">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ethereal Bloom Phonestrap</h5>
+                            <p class="card-text">A practical yet stylish accessory for your phone.</p>
+                            <a href="phonestrap2.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 product gelang">
+                    <div class="card shadow-lg">
+                        <div class="d-flex justify-content-center mt-3">
+                            <img src="gelang/gelang5.jpg" class="card-img-top img-fluid rounded"
+                                style="width: 80%; height: 300px; object-fit: cover;" alt="Bracelet">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Celestial Charm Bracelet</h5>
+                            <p class="card-text">A must-have accessory for fashion lovers.</p>
+                            <a href="gelang5.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 product cincin">
+                    <div class="card shadow-lg">
+                        <div class="d-flex justify-content-center mt-3">
+                            <img src="cincin/cincin1.jpg" class="card-img-top img-fluid rounded"
+                                style="width: 80%; height: 300px; object-fit: cover;" alt="Ring">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Heartstone Beaded Ring</h5>
+                            <p class="card-text">An elegant addition to your jewelry collection.</p>
+                            <a href="cincin1.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <script>
+            function filterSelection(category) {
+                let items = document.querySelectorAll(".product");
+
+                if (category === "all") {
+                    items.forEach(item => item.style.display = "block");
+                } else {
+                    items.forEach(item => {
+                        if (item.classList.contains(category)) {
+                            item.style.display = "block";
+                        } else {
+                            item.style.display = "none";
+                        }
+                    });
+                }
+            }
+
+            // Tampilkan semua produk saat halaman dimuat
+            filterSelection("all");
+        </script>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p class="mb-0">Created by <strong>@SereneTeam</strong> &copy; 2025. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

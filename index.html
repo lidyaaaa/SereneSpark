@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Serene Spark</title>
+    <style>
+        .hero-section {
+            margin-top: 80px;
+            background: linear-gradient(to right, #f9f7f7, #dbedf3);
+            /* Gradasi lembut */
+            padding: 50px 0;
+            border-radius: 10px;
+        }
+
+        .product-section,
+        .why-choose {
+            background-color: #f8f9fa;
+            /* Abu-abu muda untuk kesan elegan */
+            padding: 50px 0;
+            border-radius: 10px;
+        }
+
+        .testimonial-section {
+            background-color: #e3f2fd;
+            /* Biru muda */
+            padding: 50px 0;
+            border-radius: 10px;
+        }
+
+        .newsletter-section {
+            background: linear-gradient(to right, #ffcccb, #ffebcd);
+            /* Warna pastel lembut */
+            padding: 50px 0;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #343a40;
+            /* Hitam elegan */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html"> Serene Spark </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produk.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center d-flex align-items-center justify-content-center"
+        style="background: linear-gradient(to bottom, #e3f2fd, #ffffff); min-height: 100vh; padding-top: 120px; margin-top: -20px;">
+        <div class="container">
+            <h1 class="fw-bold">Serene Spark – Accessories That Brighten Your Day</h1>
+            <p class="lead mt-3">Find beauty in every detail!</p>
+            <p>
+                From <strong>elegant bracelets</strong>, <strong>shimmering rings</strong>, to <strong>trendy phone
+                    straps</strong>,
+                we bring you a collection of accessories designed to complement every style and special moment.
+            </p>
+            <p class="fw-semibold mt-3">Serene Spark – A sparkle that makes you shine every day.</p>
+            <div class="mt-4">
+                <a href="produk.html" class="btn btn-primary btn-lg">See More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Product Section -->
+    <section class="product-section container mt-5">
+        <h2 class="text-center fw-bold mb-4">Our Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg border-primary">
+                    <img src="phonestrap/phonestrap1.jpg" class="card-img-top img-fluid w-100"
+                        style="height: 400px; object-fit: cover;" alt="Phonestrap">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Dreamy Pastel Charm</h5>
+                        <p class="card-text">Stylish and trendy phone straps to add a unique touch to your device.</p>
+                        <a href="phonestrap1.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg border-danger">
+                    <img src="gelang/gelang3.jpg" class="card-img-top img-fluid w-100"
+                        style="height: 400px; object-fit: cover;" alt="Bracelet">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger">Celestial Charm Bracelet</h5>
+                        <p class="card-text">Elegant bracelets that complement your daily fashion.</p>
+                        <a href="gelang3.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg border-success">
+                    <img src="cincin/cincin1.jpg" class="card-img-top img-fluid w-100"
+                        style="height: 400px; object-fit: cover;" alt="Ring">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-success">Heartstone Beaded Ring</h5>
+                        <p class="card-text">Shimmering rings designed for elegance and charm.</p>
+                        <a href="cincin1.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section container mt-5">
+        <h2 class="text-center fw-bold mb-4">What Our Customers Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <p class="lead">"I love my new bracelet! The quality is amazing." </p>
+                    <h5>- Reffi</h5>
+                </div>
+                <div class="carousel-item">
+                    <p class="lead">"The phone strap is stylish and practical. Highly recommended!" </p>
+                    <h5>- Adel</h5>
+                </div>
+                <div class="carousel-item">
+                    <p class="lead">"The ring fits perfectly and looks stunning. Love it!" </p>
+                    <h5>- Lidya</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container text-center mt-5">
+        <h2 class="fw-bold">Stay Updated!</h2>
+        <p class="lead">Subscribe to our newsletter and never miss out on new arrivals and offers.</p>
+        <form class="d-flex justify-content-center">
+            <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+            <button class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <section class="container text-center mt-5 p-5 rounded shadow-lg"
+        style="background: linear-gradient(to right, #f8f9fa, #e3f2fd);">
+        <h2 class="fw-bold mb-4">Why Choose <span style="color: #007bff;">Serene Spark?</span></h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm bg-white">
+                    <h4><i class="bi bi-gem text-primary"></i> High-Quality Products</h4>
+                    <p class="text-muted">We ensure the best quality accessories with premium materials.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm bg-white">
+                    <h4><i class="bi bi-truck text-success"></i> Fast Shipping</h4>
+                    <p class="text-muted">We deliver your orders quickly and securely.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm bg-white">
+                    <h4><i class="bi bi-emoji-heart-eyes text-danger"></i> Customer Satisfaction</h4>
+                    <p class="text-muted">Your happiness is our priority. 100% satisfaction guaranteed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p class="mb-0">Created by <strong>@SereneTeam</strong> &copy; 2025. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
